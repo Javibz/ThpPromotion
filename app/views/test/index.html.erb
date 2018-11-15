@@ -1,0 +1,30 @@
+<h1>Test#index</h1>
+
+<ul>
+  <% if user_signed_in? %>
+    <h1> Bievenu !!! <h1>
+    <li>
+      <%= current_user.email %> 
+    </li>
+    <li>
+      <%=  link_to "sign out", destroy_user_session_path, method: :delete %>
+    </li>
+    <br>
+    <a href ="https://www.thehackingproject.org/" > Ton cadeau !!! </a>
+    <% if (user_signed_in? && current_user.email == "admin@thp.com") %>
+      <br>
+      <%= link_to 'Send Newsletter', send_nl_path, class:"btn btn-link" %>
+     <% end %>    
+  <% else%>
+    <li>
+      <%=  link_to "sign in", new_user_session_path %>
+    </li>
+    <li>
+      <%=  link_to "sign up (register)", new_user_registration_path %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
