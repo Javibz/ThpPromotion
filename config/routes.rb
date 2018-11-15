@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'home#etudiants'
   get '/chomeurs', to: 'home#chomeurs'
   get '/actifs', to: 'home#actifs'
+  get '/profile', to: 'home#profile'
   get 'save_scrapp/generate'
 
   get '/test', to: 'test#index'

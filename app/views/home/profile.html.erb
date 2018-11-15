@@ -1,15 +1,12 @@
-
-<footer>
         <section id="contact">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading">Embarque pour l'aventure THP !</h2>
+              <div class="col-lg-8 mx-auto text-center"> 
+                <h2 class="section-heading">Bienvenue <%= current_user.first_name %> ! </h2>
                 <hr class="my-4">
-                <p class="mb-5"> Une communauté soudée, un cursus gratuit et qualitatif & une pédagogie innovante</p>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="/users/sign_up">rejoins la team</a>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="<%= destroy_user_session_path %>" data-method="delete">Log-out</a>
-
+                <p class="mb-5"> Merci de vous être inscrit ! Pour vous remercier, voici un joli cadeau ! 🎁</p>
+                <p class="mb-5">Une semaine d'acces exclusive au cours de THP!</p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://www.youtube.com/watch?v=J7PIGfcirSg">Recevez votre magnifique cadeau</a>
               </div>
             </div>
     <br>
@@ -40,5 +37,4 @@
                   </div>
           </div>
         </section>
-    </footer>
     

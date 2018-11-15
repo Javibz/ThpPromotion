@@ -1,5 +1,9 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
 
-body {
+.body-user {
   background: #9CECFB;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
