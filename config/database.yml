@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: ThpPromotion_production
-  username: ThpPromotion
-  password: <%= ENV['THPPROMOTION_DATABASE_PASSWORD'] %>
+  database: ThpPromotion_development
