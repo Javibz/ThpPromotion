@@ -77,6 +77,7 @@ gem 'mailjet'
 
 gem 'popper'
 
+gem 'countdown'
 
 gem 'jquery-countdown-rails'
 
