@@ -54,7 +54,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'nokogiri'
   gem 'dotenv'
-  gem 'twitter'
 end
 
 group :test do
@@ -80,4 +79,6 @@ gem 'popper'
 
 
 gem 'jquery-countdown-rails'
+
+gem 'twitter'
 
