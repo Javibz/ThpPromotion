@@ -1,4 +1,10 @@
 class HomeController < ApplicationController
-  def index
+  def etudiants
+  end
+
+  def chomeurs
+  end
+
+  def actifs
   end
 end

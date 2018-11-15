@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  root 'home#etudiants'
+  get '/chomeurs', to: 'home#chomeurs'
+  get '/actifs', to: 'home#actifs'
 
   devise_for :users
 
