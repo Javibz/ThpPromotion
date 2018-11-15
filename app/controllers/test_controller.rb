@@ -6,6 +6,10 @@ class TestController < ApplicationController
   def send_nl
 
     User.all.each do |user|
+
+      puts "#"*30
+      puts user.first_name
+
       email = { :from_email   => "thp.formation.42@gmail.com",
         :from_name    => "THP",
         :subject      => "Newsletter THP",

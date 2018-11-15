@@ -17,6 +17,11 @@
                   <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                   </li>
+                  <% if user_signed_in? %>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="<%= profile_path %>">Profil</a>
+                    </li>
+                  <% end %>
                 </ul>
               </div>
             </div>

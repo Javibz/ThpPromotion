@@ -11,6 +11,12 @@
             </div>
     <br>
 
+    <a class="btn btn-xl js-scroll-trigger" href=" <%= send_nl_path %> ">Envoyer Newsletter </a>
+    <p> Liste des handles twitter :</p>
+    <% Handle.all.each do |handle| %>
+      <%= handle.name %>
+    <% end %>
+
     <hr class="socialmedia">
     <br>
                   <div class="social">
