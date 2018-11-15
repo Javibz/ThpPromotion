@@ -46,11 +46,9 @@ h6 {
 }
 
 .bg-primary {
-  background-image: url(app1.jpg);
-}
-
-.bg-dark {
-  background-color: #212529 !important;
+  background-size: cover;
+  background-image: url(redd.jpg);
+  width: 100%;
 }
 
 .text-faded {
@@ -222,11 +220,17 @@ header.masthead p {
   }
 }
 
+.img-fluid {
+  height: 250px;
+  width: 650px;
+}
+
 .service-box {
   max-width: 400px;
 }
 
 .portfolio-box {
+  height: 250px;
   position: relative;
   display: block;
   max-width: 650px;
@@ -242,7 +246,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(170, 25, 35, 0.8);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
