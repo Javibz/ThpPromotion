@@ -72,3 +72,13 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'
 
 gem 'devise'
+
+gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
+gem 'mailjet'
+
+gem 'popper'
+
+gem 'countdown'
+
+gem 'jquery-countdown-rails'
+
