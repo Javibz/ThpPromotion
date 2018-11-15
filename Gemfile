@@ -67,3 +67,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'devise'
 
 gem 'popper'
+
+gem 'countdown'
+
+gem 'jquery-countdown-rails'
