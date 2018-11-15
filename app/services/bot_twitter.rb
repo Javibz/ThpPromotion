@@ -1,9 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
-require 'dotenv'
 require 'twitter'
 
-Dotenv.load
 
 class BotTwitter
 		attr_accessor :client, :names, :topics
