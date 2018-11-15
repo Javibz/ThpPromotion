@@ -259,7 +259,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../assets/app.jpg");
+  background: image-url('app.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -306,7 +306,7 @@ header.masthead p {
 header.masthead2 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../assets/code.jpg");
+  background: image-url('code.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -359,7 +359,7 @@ header.masthead2 p {
 header.masthead3 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../assets/ny.jpg");
+  background: image-url('ny.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -514,4 +514,6 @@ header.masthead3 p {
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+
 }
+
