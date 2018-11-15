@@ -53,6 +53,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'nokogiri'
+  gem 'dotenv'
+  gem 'twitter'
 end
 
 group :test do
@@ -66,12 +68,17 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'
 
 gem 'devise'
 
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
 gem 'mailjet'
-gem 'twitter'
 
+gem 'popper'
+
+gem 'countdown'
+
+gem 'jquery-countdown-rails'
 
