@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get '/chomeurs', to: 'home#chomeurs'
   get '/actifs', to: 'home#actifs'
   get '/profile', to: 'home#profile'
-  get 'save_scrapp/generate'
+
+  get '/scrap', to: 'save_scrapp#scrap'
+  get '/handle', to: 'save_scrapp#handle'
 
   get '/test', to: 'test#index'
 

@@ -9,12 +9,18 @@
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://www.youtube.com/watch?v=J7PIGfcirSg">Recevez votre magnifique cadeau</a>
               </div>
             </div>
-    <br>
+    <br><br>
+    
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href=" <%= send_nl_path %> ">Envoyer Newsletter </a>
+    <br><br>
+    
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href=" <%= scrap_path %> ">Update email mairies 34</a>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href=" <%= handle_path %> ">Update handle mairies 34</a>
+    <br><br>
 
-    <a class="btn btn-xl js-scroll-trigger" href=" <%= send_nl_path %> ">Envoyer Newsletter </a>
-    <p> Liste des handles twitter :</p>
+    <p> Liste des handles twitter mairies 34 (<%= Handle.count %>) :</p>
     <% Handle.all.each do |handle| %>
-      <%= handle.name %>
+      <%= handle.name %> , 
     <% end %>
 
     <hr class="socialmedia">
