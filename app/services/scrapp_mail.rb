@@ -41,15 +41,23 @@ class ScrappMail
       tabmail = [] #creation d'array pour le hash
       tabname = [] # //
 
-      # insertion d'eletab_name_mairie << kments dans l'array [tabmail]
+      # insertion des 20 premiers mail dans l'array [tabmail]
+      # insertion es 20 premiers nom dans l'array [tabname]
+
+      i=1
       get_url_herault("http://annuaire-des-mairies.com/herault.html").each do |url_town|
           tabmail << get_email_herault(url_town)
+          tabname << get_name_herault(url_town)
+          if i = 20
+            break
+          end
+          i+=1
       end
 
       # insertion d'elements dans l'array [tabname]
-      get_url_herault("http://annuaire-des-mairies.com/herault.html").each do |url_town|
-          tabname << get_name_herault(url_town)
-      end
+      #get_url_herault("http://annuaire-des-mairies.com/herault.html").each do |url_town|
+          
+      #end
 
       # creation du hash
       my_hash = Hash[tabname.zip(tabmail)]

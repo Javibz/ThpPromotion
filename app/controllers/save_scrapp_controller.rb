@@ -33,7 +33,11 @@ class SaveScrappController < ApplicationController
 		@names_handles = @handle.find_handle
 		@test = []
 		@names_handles.each do |element|
-			Handle.create(name: "#{element}", email_id: rand(Email.first.id..Email.last.id))
+			if (Email.find_by(name: element))
+				Handle.find_by(name: element).update(email_id: rand(Email.first.id..Email.last.id))
+			else
+				Handle.create(name: "#{element}", email_id: rand(Email.first.id..Email.last.id))
+			end
 		end
 
 		redirect_to profile_path
